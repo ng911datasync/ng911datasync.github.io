@@ -2,7 +2,8 @@ var form = document.getElementById("email-form");
 function handleForm(event) { 
   event.preventDefault(); 
   var xhr = new XMLHttpRequest();
-  xhr.open("POST","https://ng911-emailer.herokuapp.com/sendEmail", true);
+  //xhr.open("POST","https://ng911-emailer.herokuapp.com/sendEmail", true);
+  xhr.open("POST","http://localhost:3000/sendEmail", true);
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.send(JSON.stringify({
       name: document.getElementById("name").value,
