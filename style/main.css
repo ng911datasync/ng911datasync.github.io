@@ -1,0 +1,104 @@
+body {
+  font-size: 18px;
+}
+.app-card {
+  max-height: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-overlay {
+  display:none;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.app-card:hover img, .app-card:hover .w3-display-topleft {
+  opacity: 0.3;
+}
+
+.app-card:hover .image-overlay {
+  opacity: 1;
+  display: block;
+
+}
+
+.subparagraph {
+  margin-left: 20px;
+}
+
+
+.image-caption {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.not-black {
+  color:#fff;
+  background-color: rgb(33, 33, 33);
+}
+
+.offset-padding {
+    padding: 4px 16px 8px 16px!important;
+}
+
+.padding-32-16 {
+  padding-top: 32px!important;
+  padding-bottom: 16px!important;
+}
+
+.padding-top-0 {
+  padding-top: 0px!important;
+}
+
+.tab-list-container {
+  display: flex;
+}
+
+.list-group {
+  min-width:25%;
+}
+
+.list-group-item {
+  border:none;
+}
+
+.list-group-item.active {
+  background-color:#808080;
+  border:none;
+}
+
+.item-action:hover {
+  background-color: #c7c7c7;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .title-responsive {
+    font-size: 24px!important;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .title-responsive {
+    font-size: 16px!important;
+    white-space: nowrap;
+  }
+
+}
+
+.card-header.btn:hover {
+  background-color: #eeeeee;
+  color: rgba(33, 33, 33)
+}
+
+.card {
+  border-top: none;
+}
