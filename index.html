@@ -1,109 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <title>NG 9-1-1 Data Sync</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style/main.css" />
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#home" class="w3-bar-item w3-button">NG 9-1-1 Data Sync</a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-          <a href="#apps" class="w3-bar-item w3-button">Apps</a>
-          <a href="#about" class="w3-bar-item w3-button">About</a>
-          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-      </div>
-    </div>
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width: 1500px;" id="home">
-      <img class="w3-image" src="/assets/Gup8MCvSsf0.jpg" alt="police car" width="1500" height="800" />
-      <div class="w3-display-middle w3-margin-top w3-center">
-        <h1 class="w3-xxlarge w3-text-white">
-          <span class="offset-padding not-black w3-opacity-min title-responsive">
-            <b>NG 9-1-1 Data Sync</b>
-          </span>
-        </h1>
-      </div>
-    </header>
-    <!-- Page content -->
-    <div class="w3-content w3-padding" style="max-width: 1564px;">
-      <!-- Project Section -->
-      <div class="w3-container padding-32-16" id="apps">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Apps</h3>
-      </div>
-      <div class="w3-row-padding">
-        <div class="w3-col w3-half m6 w3-margin-bottom">
-          <div class="w3-display-container app-card">
-            <div class="w3-display-topleft not-black w3-padding">Address Point/Road Centerline Sync Map</div>
-            <img src="/assets/W8DGM8O9SM23BX.jpg" alt="road-address" style="width: 100%;" />
-            <div class="image-overlay">
-              <div class="image-caption not-black">learn more</div>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col w3-half m6 w3-margin-bottom">
-          <div class="w3-display-container app-card">
-            <div class="w3-display-topleft not-black w3-padding">MSAG/Road Centerline Validation</div>
-            <img src="/assets/U098kasHijdaa24.jpg" alt="msag-road" style="width: 100%;" />
-            <div class="image-overlay">
-              <div class="image-caption not-black">coming soon</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About Section -->
-      <div class="w3-container padding-32-16" id="about">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-        <div class="subparagraph">
-          <h4 class="">Who we are:</h4>
-          <p>
-            We are a team of GIS developers committed to improving the quality of public safety data across the country. By providing tools to better manage public safety data, we provide our clients with the peace of mind that their data is
-            accurate, compliant, and safe.
-          </p>
-        </div>
-        <div class="subparagraph">
-          <h4 class="">What we offer:</h4>
-          <p>
-            Whether you're just getting started validating your GIS data for Next Generation 9-1-1 or you're interested in performing ongoing maintenance, NG 9-1-1 Data Sync provides invaluable tools necessary to make sure your community
-            is safe. Our apps are backed by years of experience developing GIS apps and managing mission-critical public safety data. Our apps use a Software-as-a-Service (SaaS) model, meaning they run in any modern browser. There is no
-            software to install or update, and our users are always using the most up to date version of our apps. Unlike other NG 9-1-1 data validation tools where you provide your data to a vendor, then wait months for the results, each of
-            our apps use data from your road centerline and address point web services, so the apps always utilize your most recent data. Make an edit to the data? Simply refresh the app to see your corrections in real time. For quickly
-            growing communities, performing data validation once a year is not enough. NG 9-1-1 Data Sync allows you to analyze your data quickly and as frequently as you require.
-          </p>
-        </div>
-      </div>
-      <!-- Contact Section -->
-      <div class="w3-container padding-32-16" id="contact">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-        <p>Ready to get started? Send us a message.</p>
-        <form id="email-form">
-          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name" />
-          <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email" id="email" />
-          <textarea class="w3-input w3-section w3-border" type="textarea" placeholder="Message" required name="Message" id="message"></textarea>
-          <button class="w3-button not-black w3-section" type="submit" value="Submit"><i class="fa fa-paper-plane"></i>submit</button>
-        </form>
-      </div>
-      <!-- Image of location/map -->
-      <div class="w3-container">
-        <img src="/assets/Jm52F9Leq8Bm.jpg" class="w3-image" style="width: 100%;" />
-      </div>
-      <!-- End page content -->
-    </div>
-    <!-- Footer -->
-    <footer class="w3-center not-black w3-padding-16">
-      <p>
-        2020 NG911 Data Sync
-      </p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-  <script src="index.js "></script>
+<title>NG 9-1-1 Data Sync</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="style/main.css" />
 
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button">NG 9-1-1 Data Sync</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#apps" class="w3-bar-item w3-button">Apps</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width: 1500px;" id="home">
+    <img class="w3-image" src="/assets/Gup8MCvSsf0.jpg" alt="police car" width="1500" height="800" />
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white">
+        <span class="offset-padding not-black w3-opacity-min title-responsive">
+          <b>NG 9-1-1 Data Sync</b>
+        </span>
+      </h1>
+    </div>
+  </header>
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width: 1564px;">
+    <!-- Project Section -->
+    <div class="w3-container padding-32-16" id="apps">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Apps</h3>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col w3-half m6 w3-margin-bottom">
+        <div class="w3-display-container app-card">
+          <div class="w3-display-topleft not-black w3-padding">Address Point/Road Centerline Sync Map</div>
+          <img src="/assets/W8DGM8O9SM23BX.jpg" alt="road-address" style="width: 100%;" />
+          <div class="image-overlay">
+            <div class="image-caption not-black">learn more</div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-half m6 w3-margin-bottom">
+        <div class="w3-display-container app-card">
+          <div class="w3-display-topleft not-black w3-padding">MSAG/Road Centerline Validation</div>
+          <img src="/assets/U098kasHijdaa24.jpg" alt="msag-road" style="width: 100%;" />
+          <div class="image-overlay">
+            <div class="image-caption not-black">coming soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div class="w3-container padding-32-16" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+      <div class="subparagraph">
+        <h4 class="">Who we are:</h4>
+        <p>
+          We are a team of GIS developers committed to improving the quality of public safety data across the country.
+          By providing tools to better manage public safety data, we provide our clients with the peace of mind that
+          their data is
+          accurate, compliant, and safe.
+        </p>
+      </div>
+      <div class="subparagraph">
+        <h4 class="">What we offer:</h4>
+        <p>
+          Whether you're just getting started validating your GIS data for Next Generation 9-1-1 or you're interested in
+          performing ongoing maintenance, NG 9-1-1 Data Sync provides invaluable tools necessary to make sure your
+          community
+          is safe. Our apps are backed by years of experience developing GIS apps and managing mission-critical public
+          safety data. Our apps use a Software-as-a-Service (SaaS) model, meaning they run in any modern browser. There
+          is no
+          software to install or update, and our users are always using the most up to date version of our apps. Unlike
+          other NG 9-1-1 data validation tools where you provide your data to a vendor, then wait months for the
+          results, each of
+          our apps use data from your road centerline and address point web services, so the apps always utilize your
+          most recent data. Make an edit to the data? Simply refresh the app to see your corrections in real time. For
+          quickly
+          growing communities, performing data validation once a year is not enough. NG 9-1-1 Data Sync allows you to
+          analyze your data quickly and as frequently as you require.
+        </p>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="w3-container padding-32-16" id="contact">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+      <p>Ready to get started? Send us a message.</p>
+      <div class="row container">
+        <form class="col s12">
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" type="text" class="validate checkInput" required>
+                <label data-error='please provide your name' for="name">Your Name</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="tel" class="validate checkInput" required>
+                <label data-error='please provide your email' for="email">Your Email</label>
+            </div>        
+            <div class="input-field">
+                <i class="material-icons prefix">message</i>                        
+                <textarea id="message" class="materialize-textarea checkInput" required></textarea>
+                <label data-error='please provide a message' for="message">Message</label>
+            </div>
+            <button id="submit" type='submit' class="btn waves-effect waves-light" disabled>Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+
+    </div>
+    <!-- Image of location/map -->
+    <div class="w3-container">
+      <img src="/assets/Jm52F9Leq8Bm.jpg" class="w3-image" style="width: 100%;" />
+    </div>
+    <!-- End page content -->
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center not-black w3-padding-16">
+    <p>
+      2020 NG911 Data Sync
+    </p>
+  </footer>
+   <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</body>
+<script src="index.js "></script>
 </html>
